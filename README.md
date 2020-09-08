@@ -1,4 +1,4 @@
-# Factory Method - A design pattern odissey <img align="left" src="https://media.giphy.com/media/ZEUODEtQiUZWGg6IHR/giphy.gif" width="40"/>
+# Factory Method - A design pattern odyssey <img align="left" src="https://media.giphy.com/media/ZEUODEtQiUZWGg6IHR/giphy.gif" width="40"/>
 The Factory Method Pattern just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. Basically, subclasses are responsible to create the instance of the class. 
 
 
