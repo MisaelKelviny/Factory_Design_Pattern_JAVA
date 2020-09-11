@@ -14,9 +14,9 @@ The Factory Method Pattern just define an interface or abstract class for creati
 ### Advantages
 
 - Factory Method Pattern allows the sub-classes to choose the type of objects to create.
-- Reuse. If I want to instantiate in many places, I don't have to repeat my condition, so when I come to add a new class, I don't run the risk of missing one.
-- Unit-Testability. I can write 3 tests for the factory, to make sure it returns the correct types on the correct conditions, then my calling class only needs to be tested to see if it calls the factory and then the required methods on the returned class. It needs to know nothing about the implementation of the factory itself or the concrete classes.
-- Extensibility. When someone decides we need to add a new class D to this factory, none of the calling code, neither unit tests or implementation, ever needs to be told. We simply create a new class D and extend our factory method. This is the very definition of Open-Closed Principle.
+- If I want to instantiate in many places, I don't have to repeat my condition, so when I come to add a new class, I don't run the risk of missing one.
+- I can write 3 tests for the factory, to make sure it returns the correct types on the correct conditions, then my calling class only needs to be tested to see if it calls the factory and then the required methods on the returned class. It needs to know nothing about the implementation of the factory itself or the concrete classes.
+- When someone decides we need to add a new class D to this factory, none of the calling code, neither unit tests or implementation, ever needs to be told. We simply create a new class D and extend our factory method. This is the very definition of Open-Closed Principle.
 
 ### Examples
 
@@ -46,7 +46,7 @@ public class Pentagon implements Polygon {
 	}
 }
 ```
-From now on, we created our object factory, which knows exactly which class to instate.
+From now, we created our object factory, which knows exactly which class to instantiate.
 ```java
 public class PolygonFactory {
     public static Polygon getPolygon(int numberOfSides) {
