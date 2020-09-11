@@ -63,3 +63,10 @@ public class PolygonFactory {
 }
 
 ```
+
+### This Project
+
+- Was created two folders one wihout using the design pattern factory method, and the another with it. 
+- So the MySocialMedia don't use.
+- the FactoryMethod contains all the implementation.
+
